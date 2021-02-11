@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Flexbox/CSS grid practice page</title>
+
+        <style>
+            body{
+                border-style: dotted;
+                border-color:red;
+                margin:50px 100px 50px 100px;
+                padding:100px;
+                background:gray;
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                flex-shrink:1;
+            }
+            h1{
+                text-align:center;
+                margin:10px 10px 10px 10px;
+                padding: 5px;
+                display:flex;
+                align-self:center;
+                flex-shrink:2;
+            }
+            h2{
+                text-align:center;
+            }
+            #container{
+                background-color:black;
+                height:1000px;
+                width:350px;
+                margin:350px;
+                display:flex;
+                flex-wrap:wrap;
+                justify-content:center;
+                align-self:center;
+                flex-shrink:3;
+            }
+            #box-1{
+                background:brown;
+                color:orange;
+                text-align:center;
+                width:100px;
+                height:100px;
+                margin:10px;
+                flex-basis: 6em;
+                flex-shrink: 4;
+                align-self:center;
+            }
+            #box-2{
+                background:purple;
+                color:orange;
+                text-align:center;
+                width:100px;
+                height:100px;
+                margin:10px;
+                flex-basis: 6em;
+                flex-shrink: 5;
+                align-self:center;
+            }
+            #box-3{
+                background:blue;
+                color:orange;
+                text-align:center; 
+                width:100px;
+                height:100px; 
+                margin:10px;
+                flex-basis: 6em;
+                flex-shrink: 6;
+                align-self:center;
+            }
+            #box-4{
+                background:green;
+                color:orange;
+                text-align:center;
+                width:100px;
+                height:100px;
+                margin:10px;
+                flex-basis: 6em;
+                flex-shrink: 7;
+                align-self:center;
+            }
+            #box-5{
+                background:gray;
+                color:orange;
+                text-align:center;
+                width:100px;
+                height:100px;
+                margin:10px;
+                flex-basis: 6em;
+                flex-shrink: 8;
+                align-self:center;
+            }
+            #box-6{
+                background:maroon;
+                color:orange;
+                text-align:center;
+                width:100px;
+                height:100px;
+                margin:10px;
+                flex-basis: 6em;
+                flex-shrink: 9;
+                align-self:center;
+            }
+            #container-2{
+                display:grid;
+                grid-template-columns: 50px 50px;
+                grid-template-rows: 50px 50px;
+                background:yellow;
+                color:black;
+                text-align:center;
+                padding: 100px;
+                grid-gap: 10px 10px;
+
+            }
+            #grid-1{
+                background:orange;
+            }
+            #grid-2{
+                background:red;
+            }
+            #grid-3{
+                background:green; 
+            }
+            #grid-4{
+                background:purple;
+            }
+
+            
+            #container-3{
+                display:grid;
+                background:blue;
+                color:white;
+                grid-template-columns:50px 50px;
+                grid-template-rows:50px 50px;
+                padding: 85px;
+                margin:20px;
+                grid-gap:10px 10px;
+
+            }
+            #one{
+                background: orange;
+                grid-column:1/1;
+            }
+            #two{
+                background:red;
+                grid-column:1/4;
+            }
+            #three{
+                background:green;
+                grid-column:1/6;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <h1>flexbox/CSS grid</h1> <br>
+            <h2><u><strong>Practice Page</strong></u></h2>
+
+        </header>
+
+
+        <div id="container">
+
+            <div id="box-1">
+                
+                <p id="text-box-1">box 1</p>
+
+            </div>
+
+            <div id="box-2">
+                
+                <p id="text-box-2">box 2</p>
+
+            </div>
+
+            <div id="box-3">
+                
+                <p id="text-box-2">box 3</p>
+
+            </div>
+
+            <div id="box-4">
+                
+                <p id="text-box-2">box 4.</p>
+
+            </div>
+
+            <div id="box-5">
+                
+                <p id="text-box-2">box 5</p>
+
+            </div>
+
+            <div id="box-6">
+
+            <div>
+                
+                <p id="text-box-2">box 6</p>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div id="container-2">
+
+
+            <div id="grid-1">
+
+                <p>box 1</p>
+
+            </div>
+
+            <div id="grid-2">
+
+                <p>box 2</p>
+
+            </div>
+
+            <div id="grid-3">
+
+                <p>box 3</p>
+
+            </div>
+
+            <div id="grid-4">
+
+                <p>box 4</p>
+
+            </div>
+
+
+        </div>
+
+
+        <div id="container-3">
+
+            <div id="one">
+
+                <p>1</p>
+
+            </div>
+
+            <div id="two">
+
+                <p>2</p>
+
+            </div>
+
+            <div id="three">
+
+                <p>3</p>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
